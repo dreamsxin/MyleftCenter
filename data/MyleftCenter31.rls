@@ -1,0 +1,233 @@
+
+
+/*=======================================================================
+ Name        : FunSMusic.rls
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : String localization file
+============================================================================
+*/
+CHARACTER_SET UTF8
+//  LOCALISATION STRINGS
+
+//d:Caption string for app.
+rls_string qtn_app_caption_string "我爱"
+rls_string qtn_app_short_caption_string "我爱"
+
+rls_string qtn_appl_test "Test"
+rls_string qtn_appl_exit "Exit"
+rls_string qtn_appl_option_item "<Application menu item>"
+rls_string qtn_view1_option_item "<View1 menu item>"
+rls_string qtn_view2_option_item "<View2 menu item>"
+rls_string qtn_view1_tab "View1"
+rls_string qtn_view2_tab "View2"
+
+#define qtn_text_read			"阅读"
+#define qtn_text_list			"列表"
+#define qtn_text_music_phone		"本地音乐"
+#define qtn_text_read_phone		"本地阅读资源"
+#define qtn_text_wap_channels		"频道列表"
+#define qtn_text_wap_classifies		"分类列表"
+
+#define R_MESSAGE_TEXT_DELETE "确定删除？"
+#define R_MESSAGE_TEXT_CLEAR "确定清空条目？"
+
+#define qtn_view_searh_song			"搜歌"
+#define qtn_view_searh_muring			"搜彩铃"
+#define qtn_view_searh_ring			"搜铃声"
+#define qtn_text_search_key			"请输入:"
+#define qtn_text_song_name			"歌曲名"
+#define qtn_text_singer_name			"歌手名"
+#define qtn_view_searh_page_before		"上一页"
+#define qtn_view_searh_page_next		"下一页"
+#define qtn_view_searh_page_num			"第%d页"
+
+#define qtn_view_now_read			"正在阅读"
+#define qtn_view_now_download			"正在下载"
+#define qtn_view_now_lisiten			"正在收听"
+#define qtn_view_now_play			"正在播放"
+#define qtn_view_now_wap			"当前浏览"
+
+#define qtn_view_to_view			"切换视图"
+
+#define qtn_view_download_lrc			"有匹配歌词，请按右键下载"
+#define qtn_view_lrc_no_atuo			"没有匹配歌词，请按右键搜索"
+#define qtn_view_lrc_no_manu			"抱歉，没有匹配的歌词"
+#define qtn_view_lrc_pay_notify1		"信息费1元/次，感谢使用"
+#define qtn_view_lrc_pay_notify2		"信息费2元/次，感谢使用"
+
+#define txt_pay_notify				"计费提示"
+#define txt_pay_notify_fail_text		"错误代码: %d\n错误信息: %S"
+#define txt_pay_notify_fail_title		"错误提示"
+#define txt_pay_notify_error			"付费出错"
+#define txt_pay_notify_get_again		"正在获取计费信息，请稍后再试"
+
+#define qtn_viewsearch_paly			"立即播放"
+#define qtn_viewsearch_tolist			"加入播放列表"
+#define qtn_viewsearch_download			"立即下载"
+
+#define qtn_popmenu_music_server		"音乐服务"
+#define qtn_popmenu_play_control		"播放控制"
+#define qtn_popmenu_play_mode			"播放模式"
+#define qtn_popmenu_download_manager		"下载管理"
+#define qtn_popmenu_file_manager		"文件管理"
+#define qtn_popmenu_parame_setting		"参数设置"
+#define qtn_popmenu_help			"关于软件"
+#define qtn_popmenu_color_set			"背景字体色"
+#define qtn_popmenu_pic_set			"背景图片"
+#define qtn_popmenu_pageto			"转到"
+#define qtn_popmenu_edit			"编辑"
+#define qtn_popmenu_tomain			"菜单界面"
+#define qtn_popmenu_exit			"退出  "
+#define qtn_popmenu_read_info			"详细信息"
+
+#define qtn_setting_http_iap		"HTTP接入点"
+#define qtn_download_settint_memoryl	"默认文件下载位置"
+#define qtn_settint_volume_title	"音量"
+#define qtn_settint_volume		"缺省音量"
+#define qtn_settint_rtsptimeout_title	"连接超时"
+#define qtn_settint_min_timeout		"60秒"
+#define qtn_settint_max_timeout		"240秒"
+#define qtn_settint_rtsp_timeout	"连接超时（秒）"
+#define qtn_settint_on			"开"
+#define qtn_settint_off			"关"
+#define qtn_settint_backlight		"背景灯自动打开"
+#define qtn_settint_autopause		"切换到后台时自动暂停"
+#define qtn_settint_autorool_time	"自动翻页间隔时间"
+#define qtn_settint_autorool		"自动翻页"
+#define qtn_settint_backpic		"启用背景图片"
+#define qtn_settint_down_musicpic	"下载音乐时下载专辑（歌星）图片"
+#define qtn_settint_down_musiclrc	"下载音乐时下载歌词"
+#define qtn_settint_down_readpic	"下载小说时下载封面图片"
+#define qtn_settint_fontsize		"字体大小"
+
+#define qtn_popmenu_musicserver_serachsong		"搜索歌曲"
+#define qtn_popmenu_musicserver_mylist			"我的列表"
+#define qtn_popmenu_musicserver_serachlrc		"搜索歌词"
+#define qtn_popmenu_musicserver_popbd			"热门榜单"
+#define qtn_popmenu_musicserver_asmultring		"设置为彩铃"
+#define qtn_popmenu_musicserver_asring			"设置为铃声"
+#define qtn_popmenu_musicserver_sendtofriend		"送歌给好友"
+
+#define qtn_popmenu_playcontrol_play		"播放/暂停[OK]"
+#define qtn_popmenu_playcontrol_stop		"停止[5]"
+#define qtn_popmenu_playcontrol_prev		"上一首[2]"
+#define qtn_popmenu_playcontrol_next		"下一首[8]"
+#define qtn_popmenu_playcontrol_upvolume	"增大音量[6]"
+#define qtn_popmenu_playcontrol_cutvolume	"减小音量[4]"
+#define qtn_popmenu_playcontrol_delete		"删除[c]"
+#define qtn_popmenu_playcontrol_quick		"快退/快进"
+#define qtn_popmenu_playcontrol_lrcbefare	"歌词提前0.5秒[*]"
+#define qtn_popmenu_playcontrol_lrclater	"歌词延后0.5秒[#]"
+
+
+#define qtn_popmenu_playmode_sunxu		"顺序播放"
+#define qtn_popmenu_playmode_xunhuan		"单曲循环"
+#define qtn_popmenu_playmode_suiji		"随机播放"
+
+#define qtn_view_pllist_open			"打开"
+#define txt_view_download			"下载"
+#define txt_view_downloadStop			"停止"
+#define txt_view_download_alldown		"全部下载"
+#define txt_view_download_allstop		"全部停止"
+#define txt_view_download_new			"新建下载"
+#define txt_view_download_loaded		"已下载列表"
+#define txt_view_download_delete		"删除下载[C]"
+#define txt_view_download_redown		"重新下载"
+#define txt_view_download_addto			"加入播放列表"
+#define txt_view_download_eddelete		"删除"
+#define txt_view_download_clear			"清空"
+#define txt_view_playlist_updata		"正在更新列表"
+#define txt_view_playlist_updata_phone		"更新列表"
+#define txt_view_playlist_updata_bd		"更新榜单"
+#define txt_view_playlist_play_all		"播放全部"
+
+#define txt_pllist_item_delete_item		"删除条目[C]"
+#define txt_pllist_item_delete_itemandfile	"删除条目和文件"
+#define txt_pllist_file_not_exist		"不存在此文件"
+
+#define R_DOWNLOAD_LIST				"已添加下载任务"
+#define R_DOWNLOAD_COUNT			"个已下载文件"
+
+#define txt_download_newdown			"请输入下载地址"
+#define R_MESSAGE_DOWNLOAD_DELETE 		"重新下载会删除已下载的文件，要继续么？"
+#define qtn_download_setting_selectsave		"请选择存储位置"
+
+#define txt_view_filemgr_edit		"编辑"
+#define txt_view_filemgr_cut		"剪切"
+#define	txt_view_filemgr_paster		"粘贴"
+#define txt_view_filemgr_copy		"复制"
+#define txt_view_filemgr_rename		"重命名"
+#define txt_view_filemgr_creatfolder	"创建文件夹"
+
+#define qtn_filemgr_up		"向上"
+#define qtn_filemgr_phone		"手机存储"
+#define qtn_filemgr_memory		"存储卡"
+//----------------------------------------------------------------------------
+// text for softkey
+//----------------------------------------------------------------------------
+#define qtn_softkey_select			"选择"
+#define qtn_softkey_open			"打开"
+#define qtn_softkey_cancel			"取消"
+#define qtn_softkey_back			"后退"
+#define qtn_view_wap_refresh			"刷新"
+#define qtn_view_wap_forward			"前进"
+#define qtn_view_wap_close			"关闭浏览"
+
+#define qtn_view_select				"选项"
+#define qtn_view_ok				"确定"
+#define qtn_view_back				"返回"
+#define qtn_view_hide				"隐藏"
+#define qtn_view_song				"歌词"
+//----------------------------------------------------------------------------
+// Helper string
+//----------------------------------------------------------------------------
+#define qtn_text_net_apn1			"*net*"
+#define qtn_text_net_apn2			"*互联网*"
+#define qtn_text_net_apn3			"*bt*"
+#define qtn_text_wap_apn1			"*wap*"
+#define qtn_text_wap_apn2			"*梦网*"
+#define qtn_text_wap_apn3			"*彩信*"
+
+//----------------------------------------------------------------------------
+// Messages
+//----------------------------------------------------------------------------
+#define qtn_note_no_memory			"内存不足，请关闭一些程序再试"
+
+#define qtn_err_not_found_file			"无法打开文件"
+#define qtn_err_download_createfile_fail	"创建文件失败"
+
+#define qtn_err_download_data_error		"接收数据错误"
+#define qtn_err_download_write_fail		"写入数据失败"
+
+#define qtn_err_wrong_url			"错误的URL格式"
+
+#define qtn_text_download_connecting		"正在连接服务器..."
+#define qtn_text_download_startreceive		"开始接收数据..."
+#define qtn_download_disk_full			"没有足够的存储空间"
+#define qtn_text_download_no_content_range	"服务器不支持断点续传"
+#define qtn_err_download_run			"正在下载..."
+#define qtn_err_download_pause			"暂停下载"
+#define qtn_err_download_complete		"下载完成"
+#define qtn_err_download_stop			"下载停止"
+#define qtn_err_download_error			"下载出错"
+
+#define qtn_err_http_redirect			"正在重定向服务器..."
+#define qtn_err_rtsp_connect_timeout		"服务器连接超时"
+#define qtn_err_http_connect_fail		"连接服务器失败"
+#define qtn_err_http_recv_response_fail		"服务器无应答"
+#define qtn_err_http_send_request_fail		"发送请求失败"
+#define qtn_err_http_recv_response_timeout	"接收应答超时"
+#define qtn_err_http_no_redirect_location	"无法找到重定向地址"
+#define qtn_err_http_data_has_end		"数据已经结束"
+#define qtn_err_http_not_found			"服务器中找不到此文件"	
+#define qtn_err_http_response_fail		"服务器访问失败"
+
+#define qtn_err_sinamgr_getting_data		"正在获取数据"
+#define qtn_err_sinamgr_please_wait		"请稍等"
+#define qtn_err_sinamgr_getting_other_data	"正在获取其他数据,请稍后操作"
+
+
+#define qtn_playback_dialog_register_done	"注册成功！选择：菜单->登录，打开登录界面可以登录。您的用户名为您的手机号，密码为%S，谢谢！"
+// End of File

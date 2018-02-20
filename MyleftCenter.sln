@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyleftCenter", "MyleftCenter.vcproj", "{00998274-E84E-4E94-898D-5BD2CEC3958F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Deb_S60_30M_WINSCW = Deb_S60_30M_WINSCW
+		Debug = Debug
+		Rel_S60_30M_GCCE = Rel_S60_30M_GCCE
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{00998274-E84E-4E94-898D-5BD2CEC3958F}.Deb_S60_30M_WINSCW.ActiveCfg = Deb_S60_30M_WINSCW|Win32
+		{00998274-E84E-4E94-898D-5BD2CEC3958F}.Deb_S60_30M_WINSCW.Build.0 = Deb_S60_30M_WINSCW|Win32
+		{00998274-E84E-4E94-898D-5BD2CEC3958F}.Debug.ActiveCfg = Debug|Win32
+		{00998274-E84E-4E94-898D-5BD2CEC3958F}.Debug.Build.0 = Debug|Win32
+		{00998274-E84E-4E94-898D-5BD2CEC3958F}.Rel_S60_30M_GCCE.ActiveCfg = Rel_S60_30M_GCCE|Win32
+		{00998274-E84E-4E94-898D-5BD2CEC3958F}.Rel_S60_30M_GCCE.Build.0 = Rel_S60_30M_GCCE|Win32
+		{00998274-E84E-4E94-898D-5BD2CEC3958F}.Release.ActiveCfg = Release|Win32
+		{00998274-E84E-4E94-898D-5BD2CEC3958F}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

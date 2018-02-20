@@ -1,0 +1,887 @@
+/*
+============================================================================
+ Name        : MyleftCenter.rss
+ Author      : yilizheng
+ Version     :
+ Copyright   : MyleftCenter
+ Description : This file contains all the resources for the MyleftCenter.
+============================================================================
+*/
+
+
+CHARACTER_SET UTF8
+
+//  RESOURCE IDENTIFIER
+NAME    AWIZ // 4 letter ID
+
+
+//  INCLUDES
+#include "symbian_def.h"
+
+#include <eikon.rh>
+#include <CommonDialogs.hrh>  //for MEMORYSELECTIONDIALOG  
+#include <CommonDialogs.rh>   //for MEMORYSELECTIONDIALOG  
+#include "MyleftCenter.hrh"
+#include "MyleftCenter.rls"
+#include "funui.rh"
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <avkon.mbg>
+#include <appinfo.rh>
+
+
+
+//  RESOURCE DEFINITIONS 
+// -----------------------------------------------------------------------------
+//
+//    Define the resource file signature
+//    This resource should be empty.
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE RSS_SIGNATURE { }
+
+// -----------------------------------------------------------------------------
+//
+//    Default Document Name
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF { buf = "MyleftCenter"; }
+
+// -----------------------------------------------------------------------------
+//
+//    Define default menu and CBA key.
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE EIK_APP_INFO
+    {
+//    status_pane = r_myleftcenter_status_pane;
+    }
+
+// -----------------------------------------------------------------------------
+//
+//    Localizable application information
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE LOCALISABLE_APP_INFO r_myleftcenter_localisable_app_info
+    {
+    short_caption = qtn_app_short_caption_string;
+    caption_and_icon = 
+    CAPTION_AND_ICON_INFO
+        {
+        caption = qtn_app_caption_string;
+
+        number_of_icons = 1;
+        icon_file = "\\resource\\apps\\MyleftCenter_REG.mif";
+        };
+    }
+
+//----------------------------------------------------
+//   
+//    r_myleftcenter_hotkeys
+//
+//----------------------------------------------------
+//
+RESOURCE HOTKEYS r_myleftcenter_hotkeys
+    {
+    control =
+        {
+        HOTKEY { command = EAknCmdExit; key = 'e'; }
+        };
+    }
+
+//----------------------------------------------------
+//   
+//    
+//r_funsmusic_viewload
+//----------------------------------------------------
+//
+RESOURCE FUN_VIEW r_myleftcenter_viewload
+    {
+    }
+    
+//----------------------------------------------------
+//   
+//    r_myleftcenter_view1
+//
+//----------------------------------------------------
+//
+RESOURCE FUN_VIEW r_myleftcenter_view1
+    {
+    hotkeys = r_myleftcenter_hotkeys;
+    menubar = r_myleftcenter_menubar_view1;  
+    cba     = R_AVKON_SOFTKEYS_SELECTION_LIST;    
+    }
+
+//----------------------------------------------------
+//   
+//    r_myleftcenter_menubar_view1
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_BAR r_myleftcenter_menubar_view1
+    {
+    titles =
+        {
+   //     MENU_TITLE { menu_pane = r_myleftcenter_app_menu; txt = "App"; },
+        MENU_TITLE { menu_pane = r_myleftcenter_view1_menu; txt = "View"; }
+        };
+    }
+
+//----------------------------------------------------
+//   
+//    r_myleftcenter_view1_menu
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_PANE r_myleftcenter_view1_menu
+    {
+    items =
+        {
+        MENU_ITEM { command = EMyleftCenterCmdAppToView; txt = qtn_view_to_view; cascade = r_myleftcenter_viewto_subpane;},
+        MENU_ITEM { command = EMyleftCenterCmdPopFileManager; txt = qtn_popmenu_file_manager; },       
+         MENU_ITEM { command = EMyleftCenterCmdAppTest; txt = qtn_popmenu_help; },
+         MENU_ITEM { command = EMyleftCenterCmdExit; txt = qtn_popmenu_exit; }
+        };
+    }
+    
+//----------------------------------------------------
+//   
+//    r_myleftcenter_viewto_subpane
+//
+//----------------------------------------------------
+//
+
+RESOURCE MENU_PANE r_myleftcenter_viewto_subpane
+    {
+    items =
+        {
+	MENU_ITEM { command = EMyleftCenterCmdAppToViewWap;	txt = qtn_view_now_wap; },
+	MENU_ITEM { command = EMyleftCenterCmdAppToViewRead;	txt = qtn_view_now_read; },
+	MENU_ITEM { command = EMyleftCenterCmdAppToViewLisiten;	txt = qtn_view_now_lisiten; },
+	MENU_ITEM { command = EMyleftCenterCmdAppToViewDownload;	txt = qtn_popmenu_download_manager; },
+	MENU_ITEM { command = ECmdPopParameSetting;	txt = qtn_popmenu_parame_setting; },
+	 MENU_ITEM { command = EMyleftCenterCmdAppToMenu; txt = qtn_popmenu_tomain; }
+        };
+    }
+
+//----------------------------------------------------
+//   
+//    r_myleftcenter_view2
+//
+//----------------------------------------------------
+//
+RESOURCE FUN_VIEW r_myleftcenter_view2
+    {
+    hotkeys = r_myleftcenter_hotkeys;
+    menubar = r_myleftcenter_menubar_view2;  
+    cba     = R_AVKON_SOFTKEYS_SELECTION_LIST; 
+    }
+
+//----------------------------------------------------
+//   
+//    r_myleftcenter_menubar_view2
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_BAR r_myleftcenter_menubar_view2
+    {
+    titles =
+        {
+      MENU_TITLE { menu_pane = r_myleftcenter_view2_menu; txt = "View"; }
+        };
+    }
+
+//----------------------------------------------------
+//   
+//    r_myleftcenter_view2_menu
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_PANE r_myleftcenter_view2_menu
+    {
+    items =
+        {
+	MENU_ITEM { command = EMyleftCenterCmdViewReadSetting; txt = qtn_popmenu_parame_setting; }
+//	MENU_ITEM { command = EMyleftCenterCmdViewReadHelp; txt = qtn_popmenu_help; }
+        };
+    }
+
+//----------------------------------------------------
+//   
+//    r_myleftcenter_view_readlist
+//
+//----------------------------------------------------
+//
+RESOURCE FUN_VIEW r_myleftcenter_view_readlist
+    {
+    hotkeys = r_myleftcenter_hotkeys;
+    menubar = r_myleftcenter_menubar_view_readlist;  
+    cba     = R_AVKON_SOFTKEYS_SELECTION_LIST; 
+    }
+
+//----------------------------------------------------
+//   
+//    r_myleftcenter_menubar_view_readlist
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_BAR r_myleftcenter_menubar_view_readlist
+    {
+    titles =
+        {
+      MENU_TITLE { menu_pane = r_myleftcenter_view_readlist_menu; txt = "View"; }
+        };
+    }
+
+//----------------------------------------------------
+//   
+//    r_myleftcenter_view_readlist_menu
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_PANE r_myleftcenter_view_readlist_menu
+    {
+    items =
+        {
+	MENU_ITEM { command = EMyleftCenterCmdViewReadListUpdataList; txt = txt_view_playlist_updata_phone; },
+	MENU_ITEM { command = EMyleftCenterCmdViewReadListUpdataBD; txt = txt_view_playlist_updata_bd; },
+	MENU_ITEM { command = EMyleftCenterCmdViewReadListRename; txt = txt_view_filemgr_rename; },
+	MENU_ITEM { command = EMyleftCenterCmdViewReadListDelete; txt = txt_pllist_item_delete_item; },
+	MENU_ITEM { command = EMyleftCenterCmdViewReadListDeleteAll; txt = txt_pllist_item_delete_itemandfile; },
+	MENU_ITEM { command = EMyleftCenterCmdViewReadListInfo; txt = qtn_popmenu_read_info; },
+	MENU_ITEM { command = EMyleftCenterCmdViewPlayAll; txt = txt_view_playlist_play_all; },
+	MENU_ITEM { command = EMyleftCenterCmdAppToMenu; txt = qtn_popmenu_tomain; }
+        };
+    }
+
+//----------------------------------------------------
+//   
+//    r_myleftcenter_view_read      view 6
+//
+//----------------------------------------------------
+//
+RESOURCE FUN_VIEW r_myleftcenter_view_read
+    {
+    hotkeys = r_myleftcenter_hotkeys;
+    menubar = r_myleftcenter_menubar_view_read;  
+    cba     = R_AVKON_SOFTKEYS_SELECTION_LIST; 
+    }
+//----------------------------------------------------
+//   
+//    r_myleftcenter_menubar_view_read
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_BAR r_myleftcenter_menubar_view_read
+    {
+    titles =
+        {
+      MENU_TITLE { menu_pane = r_myleftcenter_view_read_menu; txt = "View"; }
+        };
+    }
+
+//----------------------------------------------------
+//   
+//    r_myleftcenter_view_read_menu
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_PANE r_myleftcenter_view_read_menu
+    {
+    items =
+        {
+      	 MENU_ITEM { command = EMyleftCenterCmdViewReadPageto; txt = qtn_popmenu_pageto; },
+      	 MENU_ITEM { command = EMyleftCenterCmdViewReadSetColor; txt = qtn_popmenu_color_set; },
+      	 MENU_ITEM { command = EMyleftCenterCmdViewReadSetPic; txt = qtn_popmenu_pic_set; },
+      	 MENU_ITEM { command = EMyleftCenterCmdViewReadEdit; txt = qtn_popmenu_edit; },
+         MENU_ITEM { command = EMyleftCenterCmdViewReadSetting; txt = qtn_popmenu_parame_setting; },
+         MENU_ITEM { command = EMyleftCenterCmdViewReadListInfo; txt = qtn_popmenu_read_info; },
+         MENU_ITEM { command = EMyleftCenterCmdAppToView; txt = qtn_view_to_view; cascade = r_myleftcenter_viewto_subpane;}       
+        };
+    }
+
+//----------------------------------------------------
+//   
+//    r_myleftcenter_view_read_search      view 6
+//
+//----------------------------------------------------
+//
+RESOURCE FUN_VIEW r_myleftcenter_view_read_search
+    {
+    hotkeys = r_myleftcenter_hotkeys;
+    menubar = r_myleftcenter_menubar_view_read_search;  
+    cba     = R_AVKON_SOFTKEYS_SELECTION_LIST; 
+    }
+//----------------------------------------------------
+//   
+//     r_myleftcenter_menubar_view_read_search
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_BAR r_myleftcenter_menubar_view_read_search
+    {
+    titles =
+        {
+        MENU_TITLE { menu_pane = r_myleftcenter_view_read_search_menu; txt = "View"; }
+        };
+    }
+
+//----------------------------------------------------
+//   
+//    r_myleftcenter_view_read_search_menu
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_PANE r_myleftcenter_view_read_search_menu
+    {
+    items =
+        {
+     MENU_ITEM { command = EMyleftCenterCmdAppSearchBefore; txt = qtn_view_searh_page_before; },
+     MENU_ITEM { command = EMyleftCenterCmdAppSearchNext; txt =qtn_view_searh_page_next; },
+      MENU_ITEM { command = EMyleftCenterCmdAppToMenu; txt = qtn_popmenu_tomain; }
+        };
+    }
+
+//----------------------------------------------------
+//   
+//    r_myleftcenter_view_readset    // view uid =7
+//
+//----------------------------------------------------
+//
+RESOURCE FUN_VIEW r_myleftcenter_view_readset
+    {
+    menubar = r_myleftcenter_menubar_view_readset;  
+    cba     = R_AVKON_SOFTKEYS_OPTIONS_BACK;    
+    }
+
+//----------------------------------------------------
+//   
+//    r_myleftcenter_menubar_view_readset
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_BAR r_myleftcenter_menubar_view_readset
+    {
+    titles =
+        {
+        };
+    }
+
+
+
+//----------------------------------------------------
+//   
+//    r_myleftcenter_view_filemgr   // view uid =8
+//
+//----------------------------------------------------
+//
+RESOURCE FUN_VIEW r_myleftcenter_view_filemgr
+    {
+    menubar = r_myleftcenter_menubar_view_filemgr;  
+    cba     = R_AVKON_SOFTKEYS_OPTIONS_BACK; 
+    }
+
+//----------------------------------------------------
+//   
+//    r_myleftcenter_menubar_view_filemgr
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_BAR r_myleftcenter_menubar_view_filemgr
+    {
+    titles =
+        {
+       MENU_TITLE { menu_pane = r_myleftcenter_view_filemgr_menu; txt = "View"; }
+        };
+    }
+
+//----------------------------------------------------
+//   
+//    r_myleftcenter_view_filemgr_menu
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_PANE r_myleftcenter_view_filemgr_menu
+    {
+    items =
+        {
+        MENU_ITEM { command = EFunSMusicCmdViewFilemgrOpen; txt = qtn_view_pllist_open; },
+        MENU_ITEM { command = EFunSMusicCmdViewFilemgrEdit; txt = txt_view_filemgr_edit;  cascade = r_fun_filemgr_edit_subpane; }
+        };
+    }
+
+RESOURCE MENU_PANE r_fun_filemgr_edit_subpane
+    {
+    items =
+        {
+	MENU_ITEM { command = EFunSMusicCmdViewFilemgrEditCut;	txt = txt_view_filemgr_cut; },
+        MENU_ITEM { command = EFunSMusicCmdViewFilemgrEditCopy;	txt = txt_view_filemgr_copy; },
+         MENU_ITEM { command = EFunSMusicCmdViewFilemgrEditPaster;	txt = txt_view_filemgr_paster; },
+        MENU_ITEM { command = EFunSMusicCmdViewFilemgrEditDelete;	txt = qtn_popmenu_playcontrol_delete; },
+        MENU_ITEM { command = EFunSMusicCmdViewFilemgrEditRename;	txt = txt_view_filemgr_rename; },
+        MENU_ITEM { command = EFunSMusicCmdViewFilemgrEditCreatFolder;	txt = txt_view_filemgr_creatfolder; }
+        };
+    }
+
+ //----------------------------------------------------
+//   
+//    r_funsmusic_searchlist_menu
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_PANE r_funsmusic_read_searchlist_menu
+    {
+    items =
+        {
+        	MENU_ITEM { command = EMyleftCenterCmdViewReadListInfo; txt = qtn_popmenu_read_info; },
+		MENU_ITEM { command = EMyleftCenterCmdAppDownLoad; txt = qtn_viewsearch_download; },
+		MENU_ITEM { command = EMyleftCenterCmdAppToCollection; txt = qtn_viewsearch_tolist; }
+        };
+    }
+
+
+//******************************************************
+//   
+//    r_view_download   //uid 
+//
+//******************************************************
+//
+RESOURCE FUN_VIEW r_view_download
+    {
+    menubar = r_menubar_view_download;  
+    cba     = R_AVKON_SOFTKEYS_SELECTION_LIST;    
+    }
+
+//----------------------------------------------------
+//   
+//    r_menubar_view_download
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_BAR r_menubar_view_download
+    {
+    titles =
+        {
+        MENU_TITLE { menu_pane = r_view_download_menu; txt = "View"; }
+        };
+    }
+
+//----------------------------------------------------
+//   
+//    r_view_download_menu
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_PANE r_view_download_menu
+    {
+    items =
+        {      	
+	//	MENU_ITEM { command = ECmdDownLoadOpen; txt = qtn_view_pllist_open; },
+	//	MENU_ITEM { command = ECmdDownLoad; txt = txt_view_download; },
+		MENU_ITEM { command = ECmdDownLoadStop; txt = txt_view_downloadStop; },
+		MENU_ITEM { command = ECmdDownLoadDeleteItem; txt = txt_pllist_item_delete_item; }
+	//	MENU_ITEM { command = ECmdDownLoadDeleteItemAndFile; txt = txt_pllist_item_delete_itemandfile; }
+        };
+    }
+
+
+//----------------------------------------------------
+//   
+//    r_view_music
+//
+//----------------------------------------------------
+//
+RESOURCE FUN_VIEW r_view_music
+    {
+    menubar = r_menubar_view_music;  
+    cba     = R_AVKON_SOFTKEYS_OPTIONS_BACK;    
+    }
+
+//----------------------------------------------------
+//   
+//    r_menubar_view_music
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_BAR r_menubar_view_music
+    {
+    titles =
+        {
+        MENU_TITLE { menu_pane = r_view_music_menu; txt = "View"; }
+        };
+    }
+
+
+//----------------------------------------------------
+//   
+//    r_view_music_menu
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_PANE r_view_music_menu
+    {
+    items =
+        {
+		MENU_ITEM { command = ECmdPopPlayControl; txt = qtn_popmenu_play_control;cascade = r_popmenu_play_control;   },
+		MENU_ITEM { command = ECommandViewToLrcOrList; txt = qtn_view_song;},
+		MENU_ITEM { command = ECmdPopPlayMode; txt = qtn_popmenu_play_mode; cascade = r_popmenu_play_mode;  },
+		MENU_ITEM { command = ECmdPopParameSetting; txt = qtn_popmenu_parame_setting; },
+		 MENU_ITEM { command = EMyleftCenterCmdAppToView; txt = qtn_view_to_view; cascade = r_myleftcenter_viewto_subpane;}      
+        };
+    }
+
+//----------------------------------------------------
+//		   
+//    r_popmenu_play_control
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_PANE r_popmenu_play_control
+{
+	items = 
+	{
+	MENU_ITEM { command = ECmdPopMusicPlayControlPlay; 		txt = qtn_popmenu_playcontrol_play; },
+	MENU_ITEM { command = ECmdPopMusicPlayControlStop; 		txt = qtn_popmenu_playcontrol_stop; },
+	MENU_ITEM { command = ECmdPopMusicPlayControlPrev; 		txt = qtn_popmenu_playcontrol_prev; },
+	MENU_ITEM { command = ECmdPopMusicPlayControlNext; 		txt = qtn_popmenu_playcontrol_next; },
+	MENU_ITEM { command = ECmdPopMusicPlayControlUpVolume; 	txt = qtn_popmenu_playcontrol_upvolume; },
+	MENU_ITEM { command = ECmdPopMusicPlayControlDownVolume; txt = qtn_popmenu_playcontrol_cutvolume; },
+	MENU_ITEM { command = ECmdPopMusicPlayControlDelete; 		txt = qtn_popmenu_playcontrol_delete; },
+	MENU_ITEM { command = ECmdPopMusicPlayControlQuick; 		txt = qtn_popmenu_playcontrol_quick; },
+	MENU_ITEM { command = ECmdPopMusicPlayControlLrcBefare; 	txt = qtn_popmenu_playcontrol_lrcbefare; },
+	MENU_ITEM { command = ECmdPopMusicPlayControlLrcLater; 		txt = qtn_popmenu_playcontrol_lrclater; }
+	};
+}
+//----------------------------------------------------
+//  
+//    r_popmenu_play_mode
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_PANE r_popmenu_play_mode
+{
+	items = 
+	{
+	MENU_ITEM { command = ECmdPopPlayModeSunxu; 		txt = qtn_popmenu_playmode_sunxu; },
+	MENU_ITEM { command = ECmdPopPlayModeXunhuan; 		txt = qtn_popmenu_playmode_xunhuan; },
+	MENU_ITEM { command = ECmdPopPlayModeSuiji; 		txt = qtn_popmenu_playmode_suiji; }
+	};
+}
+
+ //----------------------------------------------------
+//   
+//    r_myleftcenter_view_brctl      view 13
+//
+//----------------------------------------------------
+//
+RESOURCE FUN_VIEW r_myleftcenter_view_brctl
+    {
+    hotkeys = r_myleftcenter_hotkeys;
+    menubar = r_myleftcenter_menubar_view_brctl;  
+    cba     = R_AVKON_SOFTKEYS_SELECTION_LIST; 
+    }
+//----------------------------------------------------
+//   
+//     r_myleftcenter_menubar_view_brctl
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_BAR r_myleftcenter_menubar_view_brctl
+    {
+    titles =
+        {
+        MENU_TITLE { menu_pane = r_myleftcenter_view_brctl_menu; txt = "View"; }
+        };
+    }
+
+//----------------------------------------------------
+//   
+//    r_myleftcenter_view_brctl_menu
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_PANE r_myleftcenter_view_brctl_menu
+    {
+    items =
+        {
+		MENU_ITEM { command = ECommandViewWapRefresh; txt = qtn_view_wap_refresh; },
+		MENU_ITEM { command = ECommandViewWapBack; txt =qtn_softkey_back; },
+		MENU_ITEM { command = ECommandViewWapForward; txt =qtn_view_wap_forward; },
+		MENU_ITEM { command = ECommandViewWapClose; txt =qtn_view_wap_close; }
+        };
+    }
+
+
+ //----------------------------------------------------
+//   
+//    r_myleftcenter_view_chatroom      view 13
+//
+//----------------------------------------------------
+//
+RESOURCE FUN_VIEW r_myleftcenter_view_chatroom
+    {
+    hotkeys = r_myleftcenter_hotkeys;
+    menubar = r_myleftcenter_menubar_view_chatroom;  
+    cba     = R_AVKON_SOFTKEYS_SELECTION_LIST; 
+    }
+//----------------------------------------------------
+//   
+//    r_myleftcenter_menubar_view_chatroom
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_BAR r_myleftcenter_menubar_view_chatroom
+    {
+    titles =
+        {
+      MENU_TITLE { menu_pane = r_myleftcenter_view_read_chatroom; txt = "View"; }
+        };
+    }
+
+//----------------------------------------------------
+//   
+//    r_myleftcenter_view_read_chatroom
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_PANE r_myleftcenter_view_read_chatroom
+    {
+    items =
+        {
+      	 MENU_ITEM { command = EMyleftCenterCmdViewReadPageto; txt = qtn_popmenu_pageto; },
+      	 MENU_ITEM { command = EMyleftCenterCmdViewReadSetColor; txt = qtn_popmenu_color_set; },
+      	 MENU_ITEM { command = EMyleftCenterCmdViewReadSetPic; txt = qtn_popmenu_pic_set; },
+      	 MENU_ITEM { command = EMyleftCenterCmdViewReadEdit; txt = qtn_popmenu_edit; },
+         MENU_ITEM { command = EMyleftCenterCmdViewReadSetting; txt = qtn_popmenu_parame_setting; },
+         MENU_ITEM { command = EMyleftCenterCmdViewReadListInfo; txt = qtn_popmenu_read_info; }
+      //   MENU_ITEM { command = EMyleftCenterCmdAppToView; txt = qtn_view_to_view; cascade = r_myleftcenter_viewto_subpane;}       
+        };
+    }
+
+
+//=================================================================================
+// DIALOG
+//=================================================================================
+RESOURCE DIALOG r_wait_note_softkey_cancel
+{
+	flags = EAknWaitNoteFlags;
+	buttons = R_AVKON_SOFTKEYS_CANCEL;
+	items = {
+		DLG_LINE {
+			type = EAknCtNote;
+			//id = EFondoPlayerCtrlIdWaitNote;
+			id = 210;
+			control = AVKON_NOTE {
+				layout = EWaitLayout;
+				singular_label = "Please Wait";
+				//plural_label = "";
+				//imagefile = AVKON_BMPFILE_NAME;
+				//imageid = EMbmAvkonQgn_note_sml;
+				//imagemask = EMbmAvkonQgn_note_sml_mask;
+				animation = R_QGN_GRAF_WAIT_BAR_ANIM;
+			};
+		}
+	};
+}
+
+RESOURCE MEMORYSELECTIONDIALOG r_memory_selection_dialog
+{
+	title = qtn_download_setting_selectsave;
+	locations = {
+		LOCATION {
+			root_path = "C:\\";
+		},
+		LOCATION {
+			root_path = "E:\\";
+		}
+	};
+}
+
+RESOURCE FILESELECTIONDIALOG r_file_selection_dialog
+{
+	title = qtn_download_setting_selectsave;
+	softkey_1_file = qtn_softkey_select;
+	softkey_1_folder = qtn_softkey_open;
+	softkey_2_root_level = qtn_softkey_cancel;
+	softkey_2_subfolder = qtn_softkey_back;
+
+
+}
+
+RESOURCE DIALOG r_wait_note_softkey_empty
+{
+	flags = EAknWaitNoteFlags;
+	buttons = R_AVKON_SOFTKEYS_EMPTY;
+	items = {
+		DLG_LINE {
+			type = EAknCtNote;
+			//id = EFondoPlayerCtrlIdWaitNote;
+			id = 200;
+			control = AVKON_NOTE {
+				layout = EWaitLayout;
+				singular_label = "Please Wait";
+				//plural_label = "";
+				//imagefile = AVKON_BMPFILE_NAME;
+				//imageid = EMbmAvkonQgn_note_sml;
+				//imagemask = EMbmAvkonQgn_note_sml_mask;
+				animation = R_QGN_GRAF_WAIT_BAR_ANIM;
+			};
+		}
+	};
+}
+
+//=================================================================================
+// Strings
+//=================================================================================
+//
+// view
+//
+RESOURCE TBUF	r_text_app_name						{ buf = qtn_app_caption_string; }
+
+RESOURCE TBUF	r_text_view_search_song						{ buf = qtn_view_searh_song; }
+RESOURCE TBUF	r_text_view_search_muring						{ buf = qtn_view_searh_muring; }
+RESOURCE TBUF	r_text_view_search_ring						{ buf = qtn_view_searh_ring; }
+RESOURCE TBUF	r_text_view_search_key						{ buf = qtn_text_search_key; }
+RESOURCE TBUF	r_text_view_song_name						{ buf = qtn_text_song_name; }
+RESOURCE TBUF	r_text_view_singer_name						{ buf = qtn_text_singer_name; }
+RESOURCE TBUF	r_text_view_search_page_num						{ buf = qtn_view_searh_page_num; }
+
+RESOURCE TBUF	r_text_view_now_read						{ buf = qtn_view_now_read; }
+RESOURCE TBUF	r_text_view_now_download						{ buf = qtn_view_now_download; }
+RESOURCE TBUF	r_text_view_now_lisiten						{ buf = qtn_view_now_lisiten; }
+RESOURCE TBUF	r_text_view_now_play						{ buf = qtn_view_now_play; }
+RESOURCE TBUF	r_text_view_now_wap						{ buf = qtn_view_now_wap; }
+
+RESOURCE TBUF	r_text_view_download_lrc					{ buf = qtn_view_download_lrc; }
+RESOURCE TBUF	r_text_view_no_auto_lrc					{ buf = qtn_view_lrc_no_atuo; }
+RESOURCE TBUF	r_text_view_no_manu_lrc					{ buf = qtn_view_lrc_no_manu; }
+RESOURCE TBUF	r_text_view_pay_notify1						{ buf = qtn_view_lrc_pay_notify1; }
+RESOURCE TBUF	r_text_view_pay_notify2						{ buf = qtn_view_lrc_pay_notify2; }
+
+RESOURCE TBUF 	r_text_view_ok						{buf= qtn_view_ok; }
+RESOURCE TBUF 	r_text_view_select						{buf= qtn_view_select; }
+RESOURCE TBUF	r_text_view_back						{ buf = qtn_view_back; }
+RESOURCE TBUF	r_text_view_cancel						{ buf = qtn_softkey_cancel; }
+RESOURCE TBUF	r_text_view_hide						{ buf = qtn_view_hide; }
+RESOURCE TBUF	r_text_view_song						{ buf = qtn_view_song; }
+RESOURCE TBUF	r_text_view_download					{ buf = txt_view_download; }
+
+
+RESOURCE TBUF	r_text_pay_notify					{ buf = txt_pay_notify; }
+RESOURCE TBUF	r_text_pay_notify_fail_text			{ buf = txt_pay_notify_fail_text; }
+RESOURCE TBUF	r_text_pay_notify_fail_title			{ buf = txt_pay_notify_fail_title; }
+RESOURCE TBUF	r_text_pay_notify_error				{ buf = txt_pay_notify_error; }
+RESOURCE TBUF	r_text_pay_notify_get_again			{ buf = txt_pay_notify_get_again; }
+//
+//main popmenu
+//
+RESOURCE TBUF	r_text_popmenu_music_server						{ buf = qtn_popmenu_music_server; }
+RESOURCE TBUF	r_text_popmenu_play_control						{ buf = qtn_popmenu_play_control; }
+RESOURCE TBUF	r_text_popmenu_play_mode						 	{ buf = qtn_popmenu_play_mode; }
+RESOURCE TBUF	r_text_popmenu_download_manager					{ buf = qtn_popmenu_download_manager; }
+RESOURCE TBUF	r_text_popmenu_file_manager						{ buf = qtn_popmenu_file_manager; }
+RESOURCE TBUF	r_text_popmenu_parame_setting						{ buf = qtn_popmenu_parame_setting; }
+RESOURCE TBUF	r_text_popmenu_help								{ buf = qtn_popmenu_help; }
+RESOURCE TBUF	r_text_popmenu_quick								{ buf = qtn_popmenu_playcontrol_quick; }
+RESOURCE TBUF	r_text_popmenu_read_info								{ buf = qtn_popmenu_read_info; }
+
+// parame_setting list
+RESOURCE TBUF	r_text_setting_http_iap							{ buf = qtn_setting_http_iap; }
+RESOURCE TBUF	r_text_download_setting_memory						{ buf = qtn_download_settint_memoryl; }
+RESOURCE TBUF	r_text_setting_volume_title						{ buf = qtn_settint_volume_title; }
+RESOURCE TBUF	r_text_setting_volume							{ buf = qtn_settint_volume; }
+RESOURCE TBUF	r_text_setting_rtsptimeout_title						{ buf = qtn_settint_rtsptimeout_title; }
+RESOURCE TBUF	r_text_setting_min_timeout						{ buf = qtn_settint_min_timeout; }
+RESOURCE TBUF	r_text_setting_max_timeout						{ buf = qtn_settint_max_timeout; }
+RESOURCE TBUF  	r_text_setting_rtsp_timeout 						{ buf=qtn_settint_rtsp_timeout; }
+RESOURCE TBUF 	r_text_setting_on								{ buf=qtn_settint_on; }
+RESOURCE TBUF	r_text_setting_off								{ buf = qtn_settint_off; }
+RESOURCE TBUF 	r_text_setting_backlight 							 {buf=qtn_settint_backlight; }
+RESOURCE TBUF 	r_text_setting_autopause 						{ buf=qtn_settint_autopause ; }
+
+RESOURCE TBUF 	r_text_setting_autorool_time						{ buf=qtn_settint_autorool_time; }
+RESOURCE TBUF	r_text_setting_autorool							{ buf = qtn_settint_autorool; }
+RESOURCE TBUF 	r_text_setting_backpic 							{buf=qtn_settint_backpic; }
+RESOURCE TBUF 	r_text_setting_down_musicpic							{buf=qtn_settint_down_musicpic; }
+RESOURCE TBUF 	r_text_setting_down_musiclrc							{buf=qtn_settint_down_musiclrc; }
+RESOURCE TBUF 	r_text_setting_down_readpic 							{buf=qtn_settint_down_readpic; }
+RESOURCE TBUF 	r_text_setting_fontsize 							{ buf=qtn_settint_fontsize ; }
+
+RESOURCE TBUF r_down_list { buf=R_DOWNLOAD_LIST; }
+RESOURCE TBUF r_down_count { buf=R_DOWNLOAD_COUNT; }
+
+
+RESOURCE TBUF r_download_delete 		{buf= R_MESSAGE_DOWNLOAD_DELETE; }
+
+RESOURCE TBUF r_filemgr_up 			{ buf=qtn_filemgr_up; }
+RESOURCE TBUF r_filemgr_phone 			{ buf=qtn_filemgr_phone; }
+RESOURCE TBUF r_filemgr_memory 		{ buf=qtn_filemgr_memory; }
+//
+// Messages
+//
+
+RESOURCE TBUF r_message_delete 			{buf= R_MESSAGE_TEXT_DELETE; }
+RESOURCE TBUF r_message_clear 			{buf= R_MESSAGE_TEXT_CLEAR; }
+RESOURCE TBUF r_message_file_not_exist 		{buf= txt_pllist_file_not_exist; }
+
+RESOURCE TBUF	r_text_read							{ buf = qtn_text_read; }
+RESOURCE TBUF	r_text_list					{ buf = qtn_text_list; }
+RESOURCE TBUF	r_text_music_phone							{ buf = qtn_text_music_phone; }
+RESOURCE TBUF	r_text_read_phone						{ buf = qtn_text_read_phone; }
+RESOURCE TBUF	r_text_wap_channels						{ buf = qtn_text_wap_channels; }
+RESOURCE TBUF	r_text_wap_classifies						{ buf = qtn_text_wap_classifies; }
+
+//
+// Helper strings
+//
+RESOURCE TBUF	r_text_net_apn1							{ buf = qtn_text_net_apn1; }
+RESOURCE TBUF	r_text_net_apn2							{ buf = qtn_text_net_apn2; }
+RESOURCE TBUF	r_text_net_apn3							{ buf = qtn_text_net_apn3; }
+RESOURCE TBUF	r_text_wap_apn1							{ buf = qtn_text_wap_apn1; }
+RESOURCE TBUF	r_text_wap_apn2							{ buf = qtn_text_wap_apn2; }
+RESOURCE TBUF	r_text_wap_apn3							{ buf = qtn_text_wap_apn3; }
+
+RESOURCE TBUF r_text_no_memory					{ buf = qtn_note_no_memory; }
+
+
+RESOURCE TBUF r_text_playlist_updata			{ buf = txt_view_playlist_updata; }
+RESOURCE TBUF r_text_download_openfile_fail			{ buf = qtn_err_not_found_file; }
+RESOURCE TBUF r_text_download_createfile_fail		{ buf = qtn_err_download_createfile_fail; }
+RESOURCE TBUF r_text_download_connecting				{ buf = qtn_text_download_connecting; }
+
+RESOURCE TBUF r_text_download_disk_full					{ buf = qtn_download_disk_full; }
+RESOURCE TBUF r_text_download_receiving					{ buf = qtn_text_download_startreceive; }
+RESOURCE TBUF r_text_download_data_error				{ buf = qtn_err_download_data_error; }
+RESOURCE TBUF r_text_download_write_fail				{ buf = qtn_err_download_write_fail; }
+
+RESOURCE TBUF r_text_download_no_content_length	{ buf = qtn_text_download_no_content_range; }
+RESOURCE TBUF r_text_parse_url_error		{ buf = qtn_err_wrong_url; }
+RESOURCE TBUF r_text_download_run					{ buf = qtn_err_download_run; }
+RESOURCE TBUF r_text_download_pause					{ buf = qtn_err_download_pause; }
+RESOURCE TBUF r_text_download_complete					{ buf = qtn_err_download_complete; }
+RESOURCE TBUF r_text_download_stop							{ buf = qtn_err_download_stop; }
+RESOURCE TBUF r_text_download_error							{ buf = qtn_err_download_error; }
+
+RESOURCE TBUF r_text_http_connect_timeout				{ buf = qtn_err_http_connect_timeout; }
+RESOURCE TBUF r_text_http_connect_fail					{ buf = qtn_err_http_connect_fail; }
+RESOURCE TBUF r_text_http_recv_response_fail		{ buf = qtn_err_http_recv_response_fail; }
+RESOURCE TBUF r_text_http_send_request_fail			{ buf = qtn_err_http_send_request_fail; }
+RESOURCE TBUF r_text_http_recv_response_timeout	{ buf = qtn_err_http_recv_response_timeout; }
+RESOURCE TBUF r_text_http_no_redirect_location	{ buf = qtn_err_http_no_redirect_location; }
+RESOURCE TBUF r_text_http_response_416					{ buf = qtn_err_http_data_has_end; }
+RESOURCE TBUF r_text_http_redirecting						{ buf = qtn_err_http_redirect; }
+RESOURCE TBUF r_text_http_not_found							{ buf = qtn_err_http_not_found; }
+RESOURCE TBUF r_text_http_response_not_ok				{ buf = qtn_err_http_response_fail; }
+
+RESOURCE TBUF r_text_playback_dialog_register_done							{	buf = qtn_playback_dialog_register_done; }
+
+RESOURCE TBUF r_text_http_reconnect_server			{ buf = qtn_err_http_reconnect_server; }	
+
+RESOURCE TBUF r_text_sinamgr_getting_data			{ buf = qtn_err_sinamgr_getting_data; }	
+RESOURCE TBUF r_text_sinamgr_please_wait			{ buf = qtn_err_sinamgr_please_wait; }	
+RESOURCE TBUF r_text_sinamgr_getting_other_data			{ buf = qtn_err_sinamgr_getting_other_data; }
+

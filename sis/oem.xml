@@ -1,0 +1,9 @@
+<oem>
+	<provider_name>MyLeft</provider_name>
+	<myleft_firstPage>http://mobile.myleft.org/</myleft_firstPage>
+	<myleft_address>http://mobile.myleft.org/api</myleft_address>
+	<down_address>http://mobile.myleft.org/api/down</down_address>
+	<chatroom_proxy_address>222.186.30.5</chatroom_proxy_address>
+	<chatroom_proxy_port>8222</chatroom_proxy_port>
+</oem>
+

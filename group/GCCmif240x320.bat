@@ -1,0 +1,1 @@
+d:\Symbian\9.1\S60_3rd_MR/Epoc32/tools/mifconv.exe ../../../../Symbian\9.1\S60_3rd_MR\Epoc32\data\z\resource\apps\MyleftCenter.mbm /Fmif_list240x320.txt

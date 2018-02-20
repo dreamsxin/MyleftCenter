@@ -1,0 +1,29 @@
+; MyleftPic.pkg
+;
+;Language - standard language definitions
+&ZH
+
+; standard SIS file header
+#{"MyleftPic"},(0xe41e38a4),1,0,0
+
+;Localised Vendor name
+%{"MyleftPic-ZH"}
+
+;Unique Vendor name
+:"MyleftPic"
+
+;Supports Series 60 v 3.0
+[0x101F7961], 0, 0, 0, {"Series60ProductID"}
+
+;Files to install
+
+".\240x320\MyleftPic0.jpg"		-"c:\system\data\MyleftCenter\BackPic\MyleftPic0.jpg"
+".\240x320\MyleftPic1.jpg"		-"c:\system\data\MyleftCenter\BackPic\MyleftPic1.jpg"
+".\240x320\MyleftPic2.jpg"		-"c:\system\data\MyleftCenter\BackPic\MyleftPic2.jpg"
+".\240x320\MyleftPic3.jpg"		-"c:\system\data\MyleftCenter\BackPic\MyleftPic3.jpg"
+".\240x320\MyleftPic4.jpg"		-"c:\system\data\MyleftCenter\BackPic\MyleftPic4.jpg"
+".\240x320\MyleftPic5.jpg"		-"c:\system\data\MyleftCenter\BackPic\MyleftPic5.jpg"
+".\240x320\MyleftPic6.jpg"		-"c:\system\data\MyleftCenter\BackPic\MyleftPic6.jpg"
+
+
+

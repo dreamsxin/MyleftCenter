@@ -1,0 +1,29 @@
+<oem>
+	<provider_name>SinaMusic</provider_name>
+	<device_string>s60os9.0</device_string>
+	<upgrade_address>http://sinas1.funinnet.com/fmc/s1</upgrade_address>
+
+	<sublist_address>http://sublist.funvv.com/sublist/</sublist_address>
+	<bookmark_address>http://sinas4.funinnet.com/fmc/s4</bookmark_address>
+	<hotlist_address>http://sinas3.funinnet.com/fmc/s3</hotlist_address>
+	<localad_address>http://sinas8.funinnet.com/fmc/s8</localad_address>
+	<message_address>http://sinas9.funinnet.com/fmc/s9</message_address>
+	<recommand_address>http://sinas7.funinnet.com/fmc/s7</recommand_address>
+	<bill_address>http://sinas2.funinnet.com/fmc/s2</bill_address>
+	<idle_down>http://subdown.funvv.com/subdown/subdown.fsx</idle_down>
+	<online_help>http://3g.sina.com.cn/3g/soft/index.php?tid=444&did=159&vid=547&oid=58&vt=2</online_help>
+	<audio_search>http://search.funvv.com/audio</audio_search>
+	<video_search>http://search.funvv.com/video</video_search>
+	<audio_recommend>http://recommend.funvv.com/audio</audio_recommend>
+	<video_recommend>http://recommend.funvv.com/video</video_recommend>
+	<uidsms_recipient></uidsms_recipient>
+	<uidsms_message>您需要注册，是否立即通过短信注册?</uidsms_message>
+
+	<fmc_address>http://sinas6.funinnet.com/fmc/s6</fmc_address>
+	<register_address>http://sinas5.funinnet.com/fmc/s5</register_address>
+	<upgrade_info_page>http://3g.sina.com.cn/redirect.php?pid=45</upgrade_info_page>
+	
+	<sina_music_address>http://60.191.0.157:8080/yue/sina2.php</sina_music_address>
+	<music_fsxpay_address>http://pay.funvv.com:6666/feeCenter/query</music_fsxpay_address>
+</oem>
+

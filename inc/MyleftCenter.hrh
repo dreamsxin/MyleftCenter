@@ -1,0 +1,100 @@
+/*
+============================================================================
+ Name        : MyleftCenter resource header file MyleftCenter.hrh
+ Author      : yilizheng
+ Version     :
+ Copyright   : MyleftCenter
+ Description : This file contains declarations for constants of MyleftCenter.
+               The file can be included in C++ or resource file.
+============================================================================
+*/
+
+#ifndef MYLEFTCENTER_HRH
+#define MYLEFTCENTER_HRH
+
+enum TMyleftCenterCommandIds
+    {
+    EMyleftCenterCmdAppTest = 1001,
+    EMyleftCenterCmdPopFileManager,
+    EMyleftCenterCmdAppToView,
+    	EMyleftCenterCmdAppToViewRead,
+    	EMyleftCenterCmdAppToViewLisiten,
+    	EMyleftCenterCmdAppToViewWap,
+    	EMyleftCenterCmdAppToViewDownload,
+    EMyleftCenterCmdAppSearchBook,
+    EFunSMusicCmdViewListUpdateList,
+     EMyleftCenterCmdAppToMenu,
+     EMyleftCenterCmdViewReadHelp,
+     EMyleftCenterCmdViewReadPageto,
+     EMyleftCenterCmdViewReadSetColor,
+     EMyleftCenterCmdViewReadSetPic,
+     EMyleftCenterCmdViewReadEdit,
+     EMyleftCenterCmdViewReadSetting,
+     EMyleftCenterCmdViewReadListUpdataList,
+     EMyleftCenterCmdViewReadListUpdataBD,
+     EMyleftCenterCmdViewReadListRename,
+     EMyleftCenterCmdViewReadListDelete,
+     EMyleftCenterCmdViewReadListDeleteAll,
+     EMyleftCenterCmdViewReadListInfo,
+     EMyleftCenterCmdViewPlayAll,
+     EMyleftCenterCmdAppDownLoad,
+     EMyleftCenterCmdAppToCollection,
+     EMyleftCenterCmdAppSearchBefore,
+     EMyleftCenterCmdAppSearchNext,
+ 
+	EFunSMusicCmdViewFilemgrOpen,
+	EFunSMusicCmdViewFilemgrEdit,
+		EFunSMusicCmdViewFilemgrEditCut,
+		EFunSMusicCmdViewFilemgrEditCopy,
+		EFunSMusicCmdViewFilemgrEditPaster,
+		EFunSMusicCmdViewFilemgrEditDelete,
+		EFunSMusicCmdViewFilemgrEditRename,
+		EFunSMusicCmdViewFilemgrEditCreatFolder,
+
+	ECmdDownLoadOpen,
+	ECmdDownLoad,
+	ECmdDownLoadStop,
+	ECmdDownLoadDeleteItem,
+	ECmdDownLoadDeleteItemAndFile,
+
+	ECommandListTo,
+	ECommandLrcTo,
+	ECommandDownLoadTo,
+
+	ECmdPopPlayControl,
+		ECmdPopMusicPlayControlPlay,
+		ECmdPopMusicPlayControlStop,
+		ECmdPopMusicPlayControlPrev,
+		ECmdPopMusicPlayControlNext,
+		ECmdPopMusicPlayControlUpVolume,
+		ECmdPopMusicPlayControlDownVolume,
+		ECmdPopMusicPlayControlDelete,
+		ECmdPopMusicPlayControlQuick,
+		ECmdPopMusicPlayControlLrcBefare,
+		ECmdPopMusicPlayControlLrcLater,
+	ECommandViewToLrcOrList,
+	ECmdPopPlayMode,
+		ECmdPopPlayModeSunxu,
+		ECmdPopPlayModeXunhuan,
+		ECmdPopPlayModeSuiji,
+	ECmdPopParameSetting,
+
+	ECommandViewWapRefresh,
+	ECommandViewWapBack,
+	ECommandViewWapForward,
+	ECommandViewWapClose,
+
+	EMyleftCenterCmdExit
+    };
+
+enum TMyleftCenterTabViewId
+    {
+    EMyleftCenterView1Tab= 1,
+    EMyleftCenterView2Tab
+    };
+ 
+
+
+
+
+#endif      // MYLEFTCENTER_HRH

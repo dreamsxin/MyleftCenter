@@ -1,0 +1,40 @@
+; MyleftCenter.pkg
+;
+;Language - standard language definitions
+&ZH
+
+; standard SIS file header
+#{"MyleftCenter"},(0xe41e38a7),1,0,2
+
+;Localised Vendor name
+%{"MyleftCenter-ZH"}
+
+;Unique Vendor name
+:"MyleftCenter"
+
+;Supports Series 60 v 3.0
+[0x101F7961], 0, 0, 0, {"Series60ProductID"}
+
+;Files to install
+"d:\Symbian\9.1\S60_3rd_MR\Epoc32\release\gcce\urel\MyleftCenter.exe"                 -"!:\sys\bin\MyleftCenter.exe"
+"d:\Symbian\9.1\S60_3rd_MR\Epoc32\data\z\resource\apps\MyleftCenter.r31"               -"!:\resource\apps\MyleftCenter.r31"
+"d:\Symbian\9.1\S60_3rd_MR\Epoc32\data\z\resource\apps\MyleftCenter.mif"               -"!:\resource\apps\MyleftCenter.mif"
+"d:\Symbian\9.1\S60_3rd_MR\Epoc32\data\z\resource\apps\MyleftCenter_reg.mif"	       -"!:\resource\apps\MyleftCenter_reg.mif"
+"d:\Symbian\9.1\S60_3rd_MR\epoc32\data\z\resource\apps\MyleftCenter.mbm"               -"!:\resource\apps\MyleftCenter.mbm"
+"d:\Symbian\9.1\S60_3rd_MR\Epoc32\data\z\private\10003a3f\apps\MyleftCenter_reg.r31"   -"!:\private\10003a3f\import\apps\MyleftCenter_reg.r31"
+
+"ReadAbout.txt"			-"c:\system\data\MyleftCenter\ReadAbout.txt"
+"oem.xml"						-"c:\system\data\MyleftCenter\oem.xml"
+"MyleftUpdataList.flg"	-"c:\system\data\MyleftCenter\MyleftUpdataList.flg"
+"MyleftCenter.flg"	-"c:\system\data\MyleftCenter\MyleftCenter.flg"
+"MyleftPic0.jpg"		-"c:\system\data\MyleftCenter\BackPic\MyleftPic0.jpg"
+"MyleftPic1.jpg"		-"c:\system\data\MyleftCenter\BackPic\MyleftPic1.jpg"
+"MyleftPic2.jpg"		-"c:\system\data\MyleftCenter\BackPic\MyleftPic2.jpg"
+;"MyleftPic3.jpg"		-"c:\system\data\MyleftCenter\BackPic\MyleftPic3.jpg"
+;"MyleftPic4.jpg"		-"c:\system\data\MyleftCenter\BackPic\MyleftPic4.jpg"
+;"MyleftPic5.jpg"		-"c:\system\data\MyleftCenter\BackPic\MyleftPic5.jpg"
+;"MyleftPic6.jpg"		-"c:\system\data\MyleftCenter\BackPic\MyleftPic6.jpg"
+;"MyleftPic7.jpg"		-"c:\system\data\MyleftCenter\BackPic\MyleftPic7.jpg"
+
+
+

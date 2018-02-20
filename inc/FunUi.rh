@@ -1,0 +1,52 @@
+#ifndef FUNUI_RH
+#define FUNUI_RH
+
+#if !defined(__BADEF_RH__)
+#include <BADEF.RH>
+#endif
+
+#if !defined(__UIKON_HRH__)
+#include <uikon.hrh>
+#endif
+
+#if !defined(__BAERRRSVR_RH__)
+#include <BAERRRSVR.RH>
+#endif
+
+
+STRUCT FUN_APP_INFO
+    {
+    LLINK hotkeys=0;
+    LLINK menubar=0;
+    LLINK toolbar=0;
+    LLINK toolband=0;
+    LLINK cba=0;	
+    LLINK status_pane=0;
+    LLINK custom_app_info_extension=0;	
+    }
+
+STRUCT FUN_VIEW
+	{
+	LLINK hotkeys=0;
+	LLINK menubar=0;
+	LLINK cba=0;
+	}
+
+STRUCT FUN_CBA
+	{
+	LONG flags=EEikButtonGroupAddToStack;
+	WORD breadth=80; // !!! make this accessible from LAF
+	LLINK related_buttons=0;
+   	STRUCT buttons[];
+	}
+
+STRUCT FUN_CBA_BUTTON
+	{
+	BYTE version=0;
+	WORD id=0;
+   	LTEXT txt="";
+	LTEXT bmpfile="";
+  	WORD bmpid=0xffff;		// -1
+    WORD bmpmask=0xffff;	// -1
+	}
+#endif

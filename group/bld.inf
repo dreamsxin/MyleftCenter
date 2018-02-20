@@ -1,0 +1,20 @@
+/*
+============================================================================
+ Name        : bld.inf
+ Author      : yilizheng
+ Version     :
+ Copyright   : MyleftCenter
+ Description : Component definition file
+============================================================================
+*/
+
+PRJ_PLATFORMS
+WINSCW ARMV5 GCCE
+
+PRJ_EXPORTS
+//..\inc\hello.txt ..\release\winscw\udeb\z\system\apps\myleftcenter\hello.txt
+PRJ_MMPFILES
+
+//gnumakefile icons_reg_scalable_dc.mk
+
+MyleftCenter.mmp

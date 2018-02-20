@@ -1,0 +1,148 @@
+/*
+============================================================================
+ Name        : MyleftCenter.mmp
+ Author      : yilizheng
+ Version     :
+ Copyright   : MyleftCenter
+ Description : Project specification file for MyleftCenter
+============================================================================
+*/
+TARGET                                  MyleftCenter.exe 
+TARGETTYPE                              exe 
+UID                                     0x0 0xe41e38a7 
+SECUREID                                0xe41e38a7 
+EPOCSTACKSIZE                           0x5000 
+SOURCEPATH                              ..\data 
+START RESOURCE MyleftCenter.rss 
+  TARGETPATH                              \resource\apps 
+  HEADER                                   
+END  
+
+START RESOURCE MyleftCenter_reg.rss 
+  TARGETPATH                              \private\10003a3f\apps 
+END  
+
+
+SOURCEPATH                              ..\src 
+SOURCE                                  MyleftCenter.cpp 
+SOURCE                                  MyleftCenterApplication.cpp 
+SOURCE                                  MyleftCenterDocument.cpp 
+SOURCE                                  MyleftCenterAppUi.cpp 
+SOURCE                                  MyleftCenterView.cpp 
+SOURCE                                  MyleftCenterContainer.cpp 
+SOURCE                                  MyleftCenterView2.cpp 
+SOURCE                                  MyleftCenterContainer2.cpp 
+SOURCE					    MyleftCenterViewLoad.cpp 
+SOURCE                                  MyleftCenterViewReadList.cpp 
+SOURCE                                  MyleftCenterContainerReadList.cpp
+SOURCE                                  MyleftCenterViewSearch.cpp 
+SOURCE                                  MyleftCenterContainerSearch.cpp 
+SOURCE                                  MyleftCenterViewRead.cpp
+SOURCE                                  MyleftCenterContainerRead.cpp 
+SOURCE					    MyleftCenterViewReadSet.cpp
+SOURCE                                  MyleftCenterViewFileMgr.cpp
+SOURCE                                  MyleftCenterContainerFileMgr.cpp 
+SOURCE                                  MyleftCenterViewDownLoad.cpp
+SOURCE                                  MyleftCenterContainerDownLoad.cpp 
+SOURCE                                  MyleftCenterViewMusic.cpp
+SOURCE                                  MyleftCenterContainerMusic.cpp 
+SOURCE                                  MyleftCenterViewMusicList.cpp
+SOURCE                                  MyleftCenterContainerMusicList.cpp 
+SOURCE                                  MyleftCenterViewMusicSearch.cpp
+SOURCE                                  MyleftCenterContainerMusicSearch.cpp 
+SOURCE                                  MyleftCenterViewChatRoom.cpp
+SOURCE                                  MyleftCenterContainerChatRoom.cpp 
+//new add
+SOURCE                                  MyleftCenterViewBrCtl.cpp
+SOURCE                                  MyleftCenterContainerBrCtl.cpp 
+
+SOURCE                                  CenterCore.cpp 
+SOURCE                                  Portab_symbian.cpp 
+SOURCE                                  tcpshell.cpp 
+SOURCE                                  MdaAudioShell.cpp 
+SOURCE                                  sxml.cpp 
+SOURCE                                  ansistring.cpp 
+SOURCE                                  qany.cpp 
+SOURCE                                  exception.cpp 
+SOURCE                                  loop_share.cpp 
+SOURCE                                  HttpShell.cpp 
+SOURCE                                  DownloadShell.cpp 
+SOURCE                                  HttpGetter.cpp 
+SOURCE                                  MusicContentGetter.cpp 
+SOURCE                                  SinaInterfaceMgr.cpp 
+SOURCE                                  MusicImagesFetchTask.cpp 
+SOURCE                                  SubTitle.cpp 
+SOURCE                                  LrcSubtitle.cpp 
+SOURCE                                  FunLyricLabel.cpp 
+SOURCE                                  ChatRoomTask.cpp 
+SOURCE					    BrCtlObserver.cpp
+#ifdef _S60_2RD_  
+  SOURCE                                  SmsShell.cpp 
+#endif  
+
+USERINCLUDE                             ..\inc 
+USERINCLUDE                             ..\..\..\UiLib\inc 
+SYSTEMINCLUDE                           \epoc32\include 
+SYSTEMINCLUDE                           \epoc32\include\libc 
+SYSTEMINCLUDE                           \epoc32\include\mda\client 
+LIBRARY                                 estor.lib 
+LIBRARY                                 euser.lib 
+LIBRARY                                 apparc.lib 
+LIBRARY					    apmime.lib 
+LIBRARY                                 apgrfx.lib 
+LIBRARY                                 aknnotify.lib 
+LIBRARY                                 apengine.lib 
+LIBRARY                                 aknskins.lib 
+LIBRARY                                 aknskinsrv.lib 
+LIBRARY                                 aknicon.lib 
+LIBRARY                                 cone.lib 
+LIBRARY                                 eikcore.lib 
+LIBRARY                                 eikcoctl.lib 
+LIBRARY                                 avkon.lib 
+LIBRARY                                 estlib.lib 
+LIBRARY                                 efsrv.lib 
+LIBRARY                                 egul.lib 
+LIBRARY                                 charconv.lib 
+LIBRARY                                 CommonEngine.lib 
+LIBRARY                                 CommonDialogs.lib 
+LIBRARY					    commonui.lib
+LIBRARY                                 BitmapTransforms.lib 
+LIBRARY 						browserengine.lib
+LIBRARY                                 eSock.lib 
+LIBRARY                                 insock.lib 
+LIBRARY                                 commdb.lib 
+LIBRARY                                 ConnMon.lib 
+LIBRARY                                 bafl.lib 
+LIBRARY                                 EikCtl.lib 
+LIBRARY                                 charconv.lib 
+LIBRARY                                 fbscli.lib 
+#ifdef _S60_2RD_  
+  LIBRARY                                 plpvariant.lib 
+  LIBRARY                                 Sendnorm.lib 
+#endif  
+
+LIBRARY                                 remconcoreapi.lib 
+LIBRARY                                 remconinterfacebase.lib 
+LIBRARY                                 hal.lib 
+LIBRARY                                 msgs.lib 
+LIBRARY                                 smcm.lib 
+LIBRARY                                 gsmu.lib 
+LIBRARY                                 MediaClientAudioStream.lib 
+LIBRARY                                 MediaClientAudio.lib 
+LIBRARY                                 mmfserverbaseclasses.lib 
+LIBRARY                                 mmfcontrollerframework.lib 
+LIBRARY                                 ImageConversion.lib 
+LIBRARY                                 schsvr.lib 
+LIBRARY                                 ws32.lib 
+LIBRARY                                 etext.lib 
+LIBRARY                                 egul.lib 
+LIBRARY                                 Sendui.lib 
+LIBRARY                                 gdi.lib 
+LIBRARY                                 bitgdi.lib 
+LIBRARY                                 gdi.lib 
+LIBRARY                                 sendas2.lib 
+LIBRARY                                 HWRMLightClient.lib 
+STATICLIBRARY                           funui.lib 
+LANG                                    31 
+VENDORID                                0 
+CAPABILITY                              LocalServices NetworkServices ReadUserData UserEnvironment WriteUserData 

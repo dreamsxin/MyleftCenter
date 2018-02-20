@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 12.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 51448)  -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="图层_2"
+   width="145.863"
+   height="145.859"
+   viewBox="0 0 145.863 145.859"
+   overflow="visible"
+   enable-background="new 0 0 145.863 145.859"
+   xml:space="preserve"
+   sodipodi:version="0.32"
+   inkscape:version="0.44"
+   sodipodi:docname="funvio.svg"
+   sodipodi:docbase="D:\Work\FunSMusic\FunSMusic_3rd\gfx"><metadata
+   id="metadata1921"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs1919" /><sodipodi:namedview
+   inkscape:window-height="744"
+   inkscape:window-width="1280"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   guidetolerance="10.0"
+   gridtolerance="10.0"
+   objecttolerance="10.0"
+   borderopacity="1.0"
+   bordercolor="#666666"
+   pagecolor="#ffffff"
+   id="base"
+   inkscape:zoom="2.5846881"
+   inkscape:cx="72.931503"
+   inkscape:cy="72.929497"
+   inkscape:window-x="-4"
+   inkscape:window-y="-4"
+   inkscape:current-layer="图层_2" />
+<g
+   id="g1904"
+   transform="matrix(0.846158,0,0,0.774536,10.83303,7.737878)">
+	<g
+   id="g1906">
+		<path
+   d="M 131.664,23.969 C 132.158,25.485 132.488,27.076 132.488,28.76 L 132.488,117.099 C 132.488,125.599 125.687,132.492 117.297,132.492 L 28.564,132.492 C 26.943,132.492 25.412,132.166 23.943,131.689 L 12.129,143.505 C 15.029,144.962 18.254,145.859 21.713,145.859 L 124.156,145.859 C 136.15,145.859 145.863,136.009 145.863,123.875 L 145.863,21.976 C 145.863,18.425 144.955,15.125 143.476,12.161 L 131.664,23.969 z "
+   id="path1908"
+   style="fill:#e4700c" />
+		<path
+   d="M 13.371,117.099 L 13.371,28.76 C 13.371,20.259 20.176,13.375 28.564,13.375 L 117.296,13.375 C 118.614,13.375 119.87,13.592 121.089,13.919 L 133.042,1.968 C 130.324,0.729 127.33,0 124.156,0 L 21.713,0 C 9.719,0 0,9.841 0,21.976 L 0,123.874 C 0,127.14 0.75,130.214 2.01,132.995 L 13.946,121.059 C 13.611,119.794 13.371,118.482 13.371,117.099 z "
+   id="path1910"
+   style="fill:#e4700c" />
+	</g>
+	<g
+   id="g1912">
+		<polygon
+   points="117.795,18.978 47.043,18.978 47.043,126.888 62.762,126.888 62.762,34.698 117.795,34.698 117.795,18.978 "
+   id="polygon1914" />
+		<path
+   d="M 33.826,67.854 L 121.732,61.858 L 49.547,92.619 C 49.547,92.619 32.844,101.605 26.68,91.865 C 26.68,91.865 17.568,77.216 33.826,67.854 z "
+   id="path1916"
+   style="fill:#e4700c" />
+	</g>
+</g>
+</svg>
